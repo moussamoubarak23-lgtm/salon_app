@@ -1,0 +1,5 @@
+- `[x]` Optimiser la page d'accueil (Hero, badges, polices)
+- `[x]` Ajuster la Navbar pour les petits écrans
+- `[x]` Améliorer la grille de réservation et le widget de file d'attente
+- `[x]` Vérifier et ajuster la Boutique et les Modales
+- `[x]` Finaliser le Footer et les espacements globaux
