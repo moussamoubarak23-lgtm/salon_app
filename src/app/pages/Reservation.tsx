@@ -953,11 +953,11 @@ export function Reservation() {
                                     }`}
                                     style={{ fontFamily: "Outfit, sans-serif" }}
                                   >
-                                    {customStatus === "valid" && <><Check className="w-4 h-4 flex-shrink-0" /> Ce créneau est disponible — parfait !</>}
-                                    {customStatus === "taken" && <><AlertCircle className="w-4 h-4 flex-shrink-0" /> Ce créneau est déjà pris. Choisissez un autre horaire.</>}
-                                    {customStatus === "past" && <><AlertCircle className="w-4 h-4 flex-shrink-0" /> Cet horaire est déjà passé aujourd'hui.</>}
-                                    {customStatus === "invalid" && <><AlertCircle className="w-4 h-4 flex-shrink-0" /> Format invalide. Utilisez HH:MM (ex. 14:30).</>}
-                                    {customStatus === "outofhours" && <><AlertCircle className="w-4 h-4 flex-shrink-0" /> Le salon est ouvert de 10h30 à 20h00.</>}
+                                    {customStatus === "valid" && <span className="flex items-center gap-2"><Check className="w-4 h-4 flex-shrink-0" /> Ce créneau est disponible — parfait !</span>}
+                                    {customStatus === "taken" && <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4 flex-shrink-0" /> Ce créneau est déjà pris. Choisissez un autre horaire.</span>}
+                                    {customStatus === "past" && <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4 flex-shrink-0" /> Cet horaire est déjà passé aujourd'hui.</span>}
+                                    {customStatus === "invalid" && <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4 flex-shrink-0" /> Format invalide. Utilisez HH:MM (ex. 14:30).</span>}
+                                    {customStatus === "outofhours" && <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4 flex-shrink-0" /> Le salon est ouvert de 10h30 à 20h00.</span>}
                                   </motion.div>
                                 )}
                               </AnimatePresence>
@@ -1039,7 +1039,9 @@ export function Reservation() {
                           className="flex-1 bg-primary text-primary-foreground font-bold py-3 rounded-xl disabled:opacity-40 text-sm flex items-center justify-center gap-2"
                         >
                           {isSubmitting ? (
-                            <><Loader2 className="w-4 h-4 animate-spin" /> Envoi...</>
+                            <span className="flex items-center gap-2">
+                              <Loader2 className="w-4 h-4 animate-spin" /> Envoi...
+                            </span>
                           ) : (
                             "Confirmer"
                           )}

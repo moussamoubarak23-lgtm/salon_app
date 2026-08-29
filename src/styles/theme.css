@@ -128,25 +128,32 @@
 
   body {
     @apply bg-background text-foreground;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('/salon_image.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
   }
 
-  .dark body {
-    background-image: linear-gradient(rgba(4, 8, 15, 0.75), rgba(4, 8, 15, 0.75)), url('/salon_image.jpeg');
+  /* Méthode robuste pour l'arrière-plan fixe sur Mobile et PC */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url('./salon_image.jpeg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    pointer-events: none;
+  }
+
+  .dark body::before {
+    background-image: linear-gradient(rgba(4, 8, 15, 0.78), rgba(4, 8, 15, 0.78)), url('./salon_image.jpeg');
   }
 
   /* Effet de flou sur les cartes pour qu'elles se détachent du fond sans le cacher */
   .bg-card {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
   }
 
   /**
