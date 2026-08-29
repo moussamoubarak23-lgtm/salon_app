@@ -1,0 +1,17 @@
+{
+  "name": "Zara Admin",
+  "short_name": "Admin Zara",
+  "description": "Gestion des réservations - Centre de Beauté Zara",
+  "id": "zara-admin-app",
+  "start_url": "/salon_app/#/admin-zara",
+  "display": "standalone",
+  "background_color": "#04080f",
+  "theme_color": "#04080f",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

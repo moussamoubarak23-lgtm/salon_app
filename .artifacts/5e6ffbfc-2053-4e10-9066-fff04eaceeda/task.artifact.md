@@ -1,0 +1,4 @@
+- [ ] Implémenter le "tick" de 60s et le filtrage dans `Reservation.tsx`
+- [ ] Ajouter les indicateurs de retard dans `Admin.tsx`
+- [ ] Mettre à jour le prototype (`npm run build:prototype`)
+- [ ] Effectuer un test de passage de temps

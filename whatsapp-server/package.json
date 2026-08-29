@@ -1,0 +1,22 @@
+{
+  "name": "zara-whatsapp-server",
+  "version": "1.0.0",
+  "description": "WhatsApp notification server for Zara Beauty",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "qrcode-terminal": "^0.12.0",
+    "pino": "^9.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

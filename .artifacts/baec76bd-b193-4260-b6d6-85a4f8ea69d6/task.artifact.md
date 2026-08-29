@@ -1,0 +1,10 @@
+- `[x]` Configuration de l'infrastructure de build standalone
+    - `[x]` Créer `vite.config.prototype.ts`
+    - `[x]` Mettre à jour `package.json`
+- `[x]` Création des cadres de présentation (Mockups)
+    - `[x]` Coder le cadre iPhone en Tailwind
+    - `[x]` Coder le cadre MacBook/Ordinateur en Tailwind
+- `[x]` Développement de l'interface Showcase
+    - `[x]` Créer le point d'entrée `showcase-main.tsx` et `index-prototype.html`
+    - `[x]` Gérer le sélecteur de mode (Mobile/Desktop)
+- `[x]` Finalisation et test du build unique
