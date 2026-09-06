@@ -64,7 +64,6 @@ export function Root() {
           <PageWrapper />
         </main>
         <Footer />
-        <FloatingReserveButton />
         <UnifiedInstallPrompt />
       </div>
     </ThemeProvider>
