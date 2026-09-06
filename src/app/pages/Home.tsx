@@ -16,12 +16,12 @@ const cardVariant = {
 };
 
 const SERVICES_PREVIEW = [
-  { icon: "icon_salon/icon_tresse.jpg", name: "Tresses (simple)", duration: "1h–2h", color: "from-violet-500/20 to-purple-500/10" },
-  { icon: "icon_salon/icones_casque.jpg", name: "Coup de peigne", duration: "45 min", color: "from-blue-500/20 to-cyan-500/10" },
-  { icon: "icon_salon/icon_traitement_cheveux.png", name: "Traitement", duration: "1h–2h", color: "from-green-500/20 to-emerald-500/10" },
-  { icon: "icon_salon/icon_pedicure.png", name: "Pédicure", duration: "1h", color: "from-amber-500/20 to-orange-500/10" },
-  { icon: "icon_salon/icon_tatou_sourcils.jpg", name: "Tatouage Sourcils", duration: "30 min", color: "from-pink-500/20 to-rose-500/10" },
-  { emoji: "🛍️", name: "Vente de Produits", duration: "—", color: "from-primary/20 to-blue-500/10" },
+  { icon: "icon_salon/icon_tresse.jpg", name: "Tresses (simple)", duration: "1h–2h", color: "from-white/10 to-white/5" },
+  { icon: "icon_salon/icones_casque.jpg", name: "Coup de peigne", duration: "45 min", color: "from-white/10 to-white/5" },
+  { icon: "icon_salon/icon_traitement_cheveux.png", name: "Traitement", duration: "1h–2h", color: "from-white/10 to-white/5" },
+  { icon: "icon_salon/icon_pedicure.png", name: "Pédicure", duration: "1h", color: "from-white/10 to-white/5" },
+  { icon: "icon_salon/icon_tatou_sourcils.jpg", name: "Tatouage Sourcils", duration: "30 min", color: "from-white/10 to-white/5" },
+  { emoji: "🛍️", name: "Vente de Produits", duration: "—", color: "from-white/10 to-white/5" },
 ];
 
 export function Home() {
