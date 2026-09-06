@@ -23,7 +23,7 @@ function ThemeSwitcher() {
               ? "bg-primary text-primary-foreground shadow-sm"
               : "text-muted-foreground hover:text-foreground"
           }`}
-          style={{ fontFamily: "Outfit, sans-serif" }}
+          style={{ fontFamily: "Poppins, sans-serif" }}
         >
           <Icon className="w-3.5 h-3.5" />
           <span className="hidden lg:inline">{label}</span>
@@ -100,7 +100,7 @@ export function Navbar() {
           </motion.div>
           <span
             className="font-black tracking-tight text-foreground text-base sm:text-xl"
-            style={{ fontFamily: "Fraunces, serif" }}
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
             <span className="hidden sm:inline">Centre de Beauté </span>
             <span className="text-primary italic">Zara</span>
@@ -118,7 +118,7 @@ export function Navbar() {
                 className={`relative px-3 py-2 text-sm font-semibold transition-colors rounded-lg ${
                   isActive ? "text-primary" : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 }`}
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 {label}
                 {isActive && (
@@ -137,7 +137,7 @@ export function Navbar() {
           <a
             href="https://wa.me/22796600817"
             className="flex items-center gap-2 text-sm font-semibold text-green-600 hover:text-green-500 transition-colors"
-            style={{ fontFamily: "Outfit, sans-serif" }}
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
             <MessageCircle className="w-4 h-4" />
             WhatsApp
@@ -146,7 +146,7 @@ export function Navbar() {
             <Link
               to="/reservation"
               className="bg-primary text-primary-foreground text-sm font-bold px-5 py-2.5 rounded-full hover:opacity-90 transition-opacity"
-              style={{ fontFamily: "Outfit, sans-serif" }}
+              style={{ fontFamily: "Poppins, sans-serif" }}
             >
               Réserver
             </Link>
@@ -211,7 +211,7 @@ export function Navbar() {
                         ? "bg-secondary text-primary"
                         : "text-foreground hover:bg-muted"
                     }`}
-                    style={{ fontFamily: "Outfit, sans-serif" }}
+                    style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     {location.pathname === to && (
                       <motion.div layoutId="mobile-indicator" className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
@@ -231,7 +231,7 @@ export function Navbar() {
                 <Link
                   to="/reservation"
                   className="flex items-center justify-center gap-2 bg-primary text-primary-foreground text-sm font-bold px-5 py-3.5 rounded-full w-full"
-                  style={{ fontFamily: "Outfit, sans-serif" }}
+                  style={{ fontFamily: "Poppins, sans-serif" }}
                 >
                   <Scissors className="w-4 h-4" />
                   Réserver maintenant
@@ -247,7 +247,7 @@ export function Navbar() {
                 <a
                   href="https://wa.me/22796600817"
                   className="flex items-center justify-center gap-2 text-sm font-semibold text-green-600 py-2.5 rounded-xl hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors w-full"
-                  style={{ fontFamily: "Outfit, sans-serif" }}
+                  style={{ fontFamily: "Poppins, sans-serif" }}
                 >
                   <MessageCircle className="w-4 h-4" />
                   Contacter sur WhatsApp
@@ -260,3 +260,4 @@ export function Navbar() {
     </motion.header>
   );
 }
+

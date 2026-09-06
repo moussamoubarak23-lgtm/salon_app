@@ -70,8 +70,8 @@ export function Home() {
                 { value: "5★", label: "Note" },
               ].map((s) => (
                 <div key={s.label} className="flex flex-col">
-                  <span className="font-black text-white text-xl leading-none" style={{ fontFamily: "Fraunces, serif" }}>{s.value}</span>
-                  <span className="text-[10px] text-white/60 mt-0.5" style={{ fontFamily: "Outfit, sans-serif" }}>{s.label}</span>
+                  <span className="font-black text-white text-xl leading-none" style={{ fontFamily: "Poppins, sans-serif" }}>{s.value}</span>
+                  <span className="text-[10px] text-white/60 mt-0.5" style={{ fontFamily: "Poppins, sans-serif" }}>{s.label}</span>
                 </div>
               ))}
               <div className="flex-1 flex justify-end">
@@ -86,7 +86,7 @@ export function Home() {
               initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
               className="text-4xl font-black leading-[1.08] text-white mb-4"
-              style={{ fontFamily: "Fraunces, serif" }}
+              style={{ fontFamily: "Poppins, sans-serif" }}
             >
               L'élégance,<br />
               <span className="text-primary italic">révélée</span> par<br />
@@ -102,14 +102,14 @@ export function Home() {
               <Link
                 to="/reservation"
                 className="flex-1 flex items-center justify-center gap-2 bg-primary text-white font-bold px-5 py-3.5 rounded-2xl text-sm shadow-lg shadow-primary/40"
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Réserver <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 to="/services"
                 className="flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white font-semibold px-5 py-3.5 rounded-2xl border border-white/20 text-sm"
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Services
               </Link>
@@ -127,8 +127,8 @@ export function Home() {
             <Scissors className="w-5 h-5 text-white" />
           </div>
           <div className="flex-1 min-w-0">
-            <div className="font-black text-foreground text-sm" style={{ fontFamily: "Fraunces, serif" }}>Centre de Beauté Zara</div>
-            <div className="text-xs text-muted-foreground truncate" style={{ fontFamily: "Outfit, sans-serif" }}>Mme Fatouma · Niamey, Niger</div>
+            <div className="font-black text-foreground text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>Centre de Beauté Zara</div>
+            <div className="text-xs text-muted-foreground truncate" style={{ fontFamily: "Poppins, sans-serif" }}>Mme Fatouma · Niamey, Niger</div>
           </div>
           <div className="flex items-center gap-1 bg-green-100 dark:bg-green-900/30 rounded-full px-2.5 py-1">
             <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse flex-shrink-0" />
@@ -168,7 +168,7 @@ export function Home() {
                 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
                 className="text-5xl md:text-7xl font-black leading-[1.05] text-foreground mb-8"
-                style={{ fontFamily: "Fraunces, serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 L'art de la beauté,<br />
                 <span className="text-primary italic relative">
@@ -185,7 +185,7 @@ export function Home() {
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.35 }}
                 className="text-lg text-muted-foreground leading-relaxed mb-10 max-w-lg"
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 Découvrez une expérience de soin unique au cœur de Niamey.
                 Tresses, pédicures et soins capillaires d'exception dans un cadre chaleureux et professionnel.
@@ -197,12 +197,12 @@ export function Home() {
                 className="flex flex-wrap gap-3"
               >
                 <motion.div whileHover={{ scale: 1.04, boxShadow: "0 8px 30px rgba(24,119,242,0.3)" }} whileTap={{ scale: 0.97 }}>
-                  <Link to="/reservation" className="flex items-center gap-2 bg-primary text-primary-foreground font-bold px-7 py-3.5 rounded-full" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  <Link to="/reservation" className="flex items-center gap-2 bg-primary text-primary-foreground font-bold px-7 py-3.5 rounded-full" style={{ fontFamily: "Poppins, sans-serif" }}>
                     Réserver maintenant <ArrowRight className="w-4 h-4" />
                   </Link>
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
-                  <Link to="/services" className="flex items-center gap-2 bg-card text-foreground font-semibold px-6 py-3.5 rounded-full border border-border hover:border-primary hover:text-primary transition-all" style={{ fontFamily: "Outfit, sans-serif" }}>
+                  <Link to="/services" className="flex items-center gap-2 bg-card text-foreground font-semibold px-6 py-3.5 rounded-full border border-border hover:border-primary hover:text-primary transition-all" style={{ fontFamily: "Poppins, sans-serif" }}>
                     Voir nos services
                   </Link>
                 </motion.div>
@@ -219,8 +219,8 @@ export function Home() {
                   { value: "5★", label: "Note moyenne" },
                 ].map((s, i) => (
                   <motion.div key={s.label} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.65 + i * 0.1 }}>
-                    <div className="text-2xl font-black text-primary" style={{ fontFamily: "Fraunces, serif" }}>{s.value}</div>
-                    <div className="text-xs text-muted-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>{s.label}</div>
+                    <div className="text-2xl font-black text-primary" style={{ fontFamily: "Poppins, sans-serif" }}>{s.value}</div>
+                    <div className="text-xs text-muted-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{s.label}</div>
                   </motion.div>
                 ))}
               </motion.div>
@@ -242,7 +242,7 @@ export function Home() {
                     <Users className="w-4 h-4 text-green-600" />
                   </div>
                   <div>
-                    <div className="text-xs font-bold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>File d&apos;attente</div>
+                    <div className="text-xs font-bold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>File d&apos;attente</div>
                     <div className="text-xs text-muted-foreground">2 clientes avant vous</div>
                   </div>
                 </motion.div>
@@ -250,15 +250,15 @@ export function Home() {
                   className="absolute -right-8 bottom-20 bg-card rounded-2xl shadow-xl px-4 py-3 border border-border">
                   <div className="flex items-center gap-2 mb-1">
                     <Calendar className="w-3.5 h-3.5 text-primary" />
-                    <span className="text-xs font-bold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>Prochain créneau</span>
+                    <span className="text-xs font-bold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>Prochain créneau</span>
                   </div>
-                  <div className="text-lg font-black text-primary" style={{ fontFamily: "Fraunces, serif" }}>14h30</div>
+                  <div className="text-lg font-black text-primary" style={{ fontFamily: "Poppins, sans-serif" }}>14h30</div>
                   <div className="text-xs text-green-500 font-semibold">● Disponible</div>
                 </motion.div>
                 <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.9 }}
                   className="absolute -right-6 top-8 bg-card rounded-2xl shadow-xl px-4 py-3 flex items-center gap-2 border border-border">
                   <span className="text-amber-400">★</span>
-                  <span className="text-sm font-black text-foreground" style={{ fontFamily: "Fraunces, serif" }}>5.0</span>
+                  <span className="text-sm font-black text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>5.0</span>
                 </motion.div>
               </div>
             </motion.div>
@@ -272,10 +272,10 @@ export function Home() {
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }} variants={fadeUp} className="flex items-end justify-between mb-6 md:mb-10">
             <div>
               <span className="text-xs font-bold text-primary uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Nos Prestations</span>
-              <h2 className="text-2xl sm:text-4xl font-black text-foreground mt-1" style={{ fontFamily: "Fraunces, serif" }}>Tout pour votre beauté</h2>
+              <h2 className="text-2xl sm:text-4xl font-black text-foreground mt-1" style={{ fontFamily: "Poppins, sans-serif" }}>Tout pour votre beauté</h2>
             </div>
             <motion.div whileHover={{ x: 4 }}>
-              <Link to="/services" className="hidden md:flex items-center gap-2 text-sm font-bold text-primary" style={{ fontFamily: "Outfit, sans-serif" }}>
+              <Link to="/services" className="hidden md:flex items-center gap-2 text-sm font-bold text-primary" style={{ fontFamily: "Poppins, sans-serif" }}>
                 Voir tous <ChevronRight className="w-4 h-4" />
               </Link>
             </motion.div>
@@ -297,7 +297,7 @@ export function Home() {
                     <span className="text-2xl">{s.emoji}</span>
                   )}
                 </div>
-                <div className="font-black text-foreground text-xs leading-tight mb-1" style={{ fontFamily: "Fraunces, serif" }}>{s.name}</div>
+                <div className="font-black text-foreground text-xs leading-tight mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>{s.name}</div>
                 {s.duration !== "—" && (
                   <div className="flex items-center gap-1 mt-1 text-[9px] text-muted-foreground">
                     <Clock className="w-2.5 h-2.5" />{s.duration}
@@ -324,7 +324,7 @@ export function Home() {
                     <span className="text-4xl">{s.emoji}</span>
                   )}
                 </div>
-                <h3 className="text-lg font-black text-foreground mb-2" style={{ fontFamily: "Fraunces, serif" }}>{s.name}</h3>
+                <h3 className="text-lg font-black text-foreground mb-2" style={{ fontFamily: "Poppins, sans-serif" }}>{s.name}</h3>
 
                 <div className="mt-auto w-full pt-4 border-t border-border/50">
                   <Link to="/services" className="text-xs font-bold text-muted-foreground hover:text-primary transition-colors flex items-center justify-center gap-1">
@@ -336,7 +336,7 @@ export function Home() {
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="mt-6 text-center md:hidden">
-            <Link to="/services" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full text-sm shadow-md shadow-primary/30" style={{ fontFamily: "Outfit, sans-serif" }}>
+            <Link to="/services" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full text-sm shadow-md shadow-primary/30" style={{ fontFamily: "Poppins, sans-serif" }}>
               Voir tous les services <ChevronRight className="w-4 h-4" />
             </Link>
           </motion.div>
@@ -350,7 +350,7 @@ export function Home() {
           <div className="md:hidden mb-2">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }} variants={fadeUp} className="mb-6">
               <span className="text-xs font-bold text-primary uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Pourquoi nous choisir</span>
-              <h2 className="text-2xl font-black text-foreground mt-1" style={{ fontFamily: "Fraunces, serif" }}>Réservez en toute confiance</h2>
+              <h2 className="text-2xl font-black text-foreground mt-1" style={{ fontFamily: "Poppins, sans-serif" }}>Réservez en toute confiance</h2>
             </motion.div>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }} variants={stagger} className="space-y-3">
               {[
@@ -366,8 +366,8 @@ export function Home() {
                     <Icon className="w-5 h-5" />
                   </div>
                   <div>
-                    <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Outfit, sans-serif" }}>{title}</div>
-                    <div className="text-xs text-muted-foreground mt-0.5" style={{ fontFamily: "Outfit, sans-serif" }}>{desc}</div>
+                    <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>{title}</div>
+                    <div className="text-xs text-muted-foreground mt-0.5" style={{ fontFamily: "Poppins, sans-serif" }}>{desc}</div>
                   </div>
                 </motion.div>
               ))}
@@ -387,8 +387,8 @@ export function Home() {
                   <Icon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Outfit, sans-serif" }}>{title}</div>
-                  <div className="text-xs text-muted-foreground mt-1" style={{ fontFamily: "Outfit, sans-serif" }}>{desc}</div>
+                  <div className="font-bold text-foreground text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>{title}</div>
+                  <div className="text-xs text-muted-foreground mt-1" style={{ fontFamily: "Poppins, sans-serif" }}>{desc}</div>
                 </div>
               </motion.div>
             ))}
@@ -405,20 +405,20 @@ export function Home() {
         </div>
         <div className="w-full px-4 sm:px-6 text-center relative z-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 md:mb-4" style={{ fontFamily: "Fraunces, serif" }}>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 md:mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>
               Prête pour votre prochain<br /><span className="italic text-blue-200">rendez-vous beauté ?</span>
             </h2>
-            <p className="text-blue-100 mb-7 max-w-md mx-auto text-sm" style={{ fontFamily: "Outfit, sans-serif" }}>
+            <p className="text-blue-100 mb-7 max-w-md mx-auto text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>
               Réservez votre créneau en ligne dès maintenant et profitez d&apos;un service prioritaire.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="sm:flex-none">
-                <Link to="/reservation" className="flex items-center justify-center gap-2 bg-white text-primary font-bold px-7 py-3.5 rounded-full hover:bg-blue-50 transition-colors text-sm shadow-lg" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <Link to="/reservation" className="flex items-center justify-center gap-2 bg-white text-primary font-bold px-7 py-3.5 rounded-full hover:bg-blue-50 transition-colors text-sm shadow-lg" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Réserver maintenant <ArrowRight className="w-4 h-4" />
                 </Link>
               </motion.div>
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }} className="sm:flex-none">
-                <Link to="/boutique" className="flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold px-7 py-3.5 rounded-full hover:border-white transition-colors text-sm" style={{ fontFamily: "Outfit, sans-serif" }}>
+                <Link to="/boutique" className="flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold px-7 py-3.5 rounded-full hover:border-white transition-colors text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>
                   Voir la boutique
                 </Link>
               </motion.div>
@@ -429,3 +429,4 @@ export function Home() {
     </div>
   );
 }
+

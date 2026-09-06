@@ -65,10 +65,10 @@ export function UnifiedInstallPrompt() {
               Z
             </div>
             <div>
-              <h3 className="text-sm font-bold text-foreground mb-1" style={{ fontFamily: "Fraunces, serif" }}>
+              <h3 className="text-sm font-bold text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>
                 {platform === "ios" ? "Installer Zara Beauté" : "L'application Zara Beauté"}
               </h3>
-              <p className="text-xs text-muted-foreground leading-relaxed" style={{ fontFamily: "Outfit, sans-serif" }}>
+              <p className="text-xs text-muted-foreground leading-relaxed" style={{ fontFamily: "Poppins, sans-serif" }}>
                 {platform === "ios"
                   ? "Installez l'app pour recevoir vos notifications de rendez-vous."
                   : "Téléchargez l'application pour un accès rapide et des rappels gratuits."}
@@ -98,7 +98,7 @@ export function UnifiedInstallPrompt() {
                 whileTap={{ scale: 0.98 }}
                 onClick={handleAndroidInstall}
                 className="w-full bg-primary text-white font-bold py-3 rounded-xl text-xs flex items-center justify-center gap-2 shadow-lg shadow-primary/20"
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 <Download className="w-4 h-4" />
                 Télécharger l'application
@@ -112,3 +112,4 @@ export function UnifiedInstallPrompt() {
     </AnimatePresence>
   );
 }
+

@@ -47,8 +47,8 @@ function ContactForm() {
         <div className="w-16 h-16 bg-green-100 dark:bg-green-900/40 rounded-full flex items-center justify-center mx-auto mb-4 text-green-600">
           <Check className="w-8 h-8" />
         </div>
-        <h3 className="text-xl font-black text-foreground mb-2" style={{ fontFamily: "Fraunces, serif" }}>Message envoyé !</h3>
-        <p className="text-sm text-muted-foreground leading-relaxed" style={{ fontFamily: "Outfit, sans-serif" }}>
+        <h3 className="text-xl font-black text-foreground mb-2" style={{ fontFamily: "Poppins, sans-serif" }}>Message envoyé !</h3>
+        <p className="text-sm text-muted-foreground leading-relaxed" style={{ fontFamily: "Poppins, sans-serif" }}>
           Mme Fatouma a bien reçu votre demande. Elle vous répondra sur WhatsApp très prochainement.
         </p>
         <button onClick={() => setSent(false)} className="mt-6 text-primary font-bold text-sm hover:underline">Envoyer un autre message</button>
@@ -97,7 +97,7 @@ function ContactForm() {
         whileTap={{ scale: 0.98 }}
         disabled={isSending}
         className="w-full bg-primary text-primary-foreground font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-95 transition-opacity disabled:opacity-50"
-        style={{ fontFamily: "Outfit, sans-serif" }}
+        style={{ fontFamily: "Poppins, sans-serif" }}
       >
         {isSending ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
         Envoyer le message
@@ -141,7 +141,7 @@ export function Contact() {
         <div className="w-full px-4 sm:px-6">
           <motion.div initial="hidden" animate="visible" variants={fadeUp}>
             <span className="text-xs font-bold text-primary uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Contact</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Fraunces, serif" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Poppins, sans-serif" }}>
               Venez nous<br /><span className="text-primary italic">rendre visite</span>
             </h1>
           </motion.div>
@@ -168,9 +168,9 @@ export function Contact() {
                     <div>
                       <div className="text-xs font-bold text-muted-foreground uppercase tracking-wider" style={{ fontFamily: "DM Mono, monospace" }}>{label}</div>
                       {href ? (
-                        <a href={href} className="text-sm font-semibold text-foreground mt-0.5 hover:text-primary transition-colors" style={{ fontFamily: "Outfit, sans-serif" }}>{value}</a>
+                        <a href={href} className="text-sm font-semibold text-foreground mt-0.5 hover:text-primary transition-colors" style={{ fontFamily: "Poppins, sans-serif" }}>{value}</a>
                       ) : (
-                        <div className="text-sm font-semibold text-foreground mt-0.5" style={{ fontFamily: "Outfit, sans-serif" }}>{value}</div>
+                        <div className="text-sm font-semibold text-foreground mt-0.5" style={{ fontFamily: "Poppins, sans-serif" }}>{value}</div>
                       )}
                     </div>
                   </motion.div>
@@ -184,8 +184,8 @@ export function Contact() {
                 </div>
                 {HOURS.map(({ day, hours }, i) => (
                   <div key={day} className={`flex items-center justify-between px-5 py-3.5 ${i < HOURS.length - 1 ? "border-b border-border" : ""}`}>
-                    <span className="text-sm font-semibold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>{day}</span>
-                    <span className="text-sm font-black text-primary" style={{ fontFamily: "Fraunces, serif" }}>{hours}</span>
+                    <span className="text-sm font-semibold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{day}</span>
+                    <span className="text-sm font-black text-primary" style={{ fontFamily: "Poppins, sans-serif" }}>{hours}</span>
                   </div>
                 ))}
               </motion.div>
@@ -195,7 +195,7 @@ export function Contact() {
                 whileHover={{ scale: 1.04, boxShadow: "0 8px 30px rgba(34,197,94,0.3)" }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center gap-3 bg-green-500 text-white font-bold px-7 py-3.5 rounded-full hover:bg-green-600 transition-colors"
-                style={{ fontFamily: "Outfit, sans-serif" }}
+                style={{ fontFamily: "Poppins, sans-serif" }}
               >
                 <MessageCircle className="w-5 h-5" /> Contacter sur WhatsApp
               </motion.a>
@@ -205,7 +205,7 @@ export function Contact() {
             <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="space-y-6">
               <div className="mb-4">
                 <span className="text-[10px] font-bold text-primary uppercase tracking-[0.2em]" style={{ fontFamily: "DM Mono, monospace" }}>Contact Rapide</span>
-                <h2 className="text-2xl font-black text-foreground mt-1" style={{ fontFamily: "Fraunces, serif" }}>Écrivez-nous</h2>
+                <h2 className="text-2xl font-black text-foreground mt-1" style={{ fontFamily: "Poppins, sans-serif" }}>Écrivez-nous</h2>
               </div>
 
               <ContactForm />
@@ -229,7 +229,7 @@ export function Contact() {
                         <MapPin className="w-4 h-4 text-primary-foreground" />
                       </div>
                       <div>
-                        <div className="text-sm font-black text-foreground" style={{ fontFamily: "Fraunces, serif" }}>Centre de Beauté Zara</div>
+                        <div className="text-sm font-black text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>Centre de Beauté Zara</div>
                         <div className="text-xs text-muted-foreground">Cliquez pour ouvrir Maps</div>
                       </div>
                     </div>
@@ -244,3 +244,4 @@ export function Contact() {
     </div>
   );
 }
+

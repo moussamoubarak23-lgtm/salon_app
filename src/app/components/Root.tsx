@@ -43,7 +43,7 @@ function FloatingReserveButton() {
           <Link
             to="/reservation"
             className="flex items-center justify-center gap-2.5 bg-primary text-white font-bold py-4 rounded-2xl shadow-2xl shadow-primary/50 w-full text-sm"
-            style={{ fontFamily: "Outfit, sans-serif" }}
+            style={{ fontFamily: "Poppins, sans-serif" }}
           >
             <Scissors className="w-4 h-4" />
             Réserver un créneau
@@ -58,9 +58,9 @@ export function Root() {
   return (
     <ThemeProvider>
       <ManifestManager />
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col bg-transparent">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 bg-transparent">
           <PageWrapper />
         </main>
         <Footer />
@@ -70,3 +70,4 @@ export function Root() {
     </ThemeProvider>
   );
 }
+

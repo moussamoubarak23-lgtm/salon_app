@@ -9,90 +9,80 @@ const fadeUp = {
 
 export function Footer() {
   return (
-    <footer className="bg-[#04080f] text-white py-12">
-      <div className="w-full px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-10">
+    <footer className="bg-[#04080f]/95 backdrop-blur-md text-white py-8 md:py-12 border-t border-white/10">
+      <div className="w-full px-5 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-10">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                 <Scissors className="w-4 h-4 text-primary-foreground" />
               </div>
-              <span className="text-xl font-black" style={{ fontFamily: "Fraunces, serif" }}>
+              <span className="text-lg font-black" style={{ fontFamily: "Poppins, sans-serif" }}>
                 Centre de Beauté <span className="text-blue-400 italic">Zara</span>
               </span>
             </div>
-            <p className="text-sm text-white/60 leading-relaxed mb-6" style={{ fontFamily: "Outfit, sans-serif" }}>
+            <p className="text-xs text-white/50 leading-relaxed mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>
               Votre salon de beauté de confiance à Niamey. Excellence et savoir-faire depuis 2019.
             </p>
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Services</h4>
-            <ul className="space-y-2.5">
+            <h4 className="font-bold text-white text-[11px] mb-4 uppercase tracking-widest opacity-60" style={{ fontFamily: "DM Mono, monospace" }}>Services</h4>
+            <ul className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-2.5">
               {[
-                "Tresses (simple)",
+                "Tresses",
                 "Coup de peigne",
-                "Traitement de cheveux",
+                "Traitement",
                 "Pédicure",
-                "Tatouage des sourcils"
+                "Sourcils"
               ].map((l) => (
                 <li key={l}>
-                  <Link to="/services" className="text-sm text-white/50 hover:text-primary transition-colors" style={{ fontFamily: "Outfit, sans-serif" }}>{l}</Link>
+                  <Link to="/services" className="text-xs text-white/40 hover:text-primary transition-colors" style={{ fontFamily: "Poppins, sans-serif" }}>{l}</Link>
                 </li>
               ))}
             </ul>
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Plateforme</h4>
-            <ul className="space-y-2.5">
+            <h4 className="font-bold text-white text-[11px] mb-4 uppercase tracking-widest opacity-60" style={{ fontFamily: "DM Mono, monospace" }}>Plateforme</h4>
+            <ul className="grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-2.5">
               {[
                 { label: "Accueil", to: "/" },
-                { label: "Nos Services", to: "/services" },
+                { label: "Services", to: "/services" },
                 { label: "Réservation", to: "/reservation" },
-                { label: "Boutique en ligne", to: "/boutique" },
-                { label: "Nous contacter", to: "/contact" },
+                { label: "Boutique", to: "/boutique" },
               ].map(({ label, to }) => (
                 <li key={label}>
-                  <Link to={to} className="text-sm text-white/50 hover:text-primary transition-colors" style={{ fontFamily: "Outfit, sans-serif" }}>{label}</Link>
+                  <Link to={to} className="text-xs text-white/40 hover:text-primary transition-colors" style={{ fontFamily: "Poppins, sans-serif" }}>{label}</Link>
                 </li>
               ))}
             </ul>
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}>
-            <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Contact</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-[10px] text-white/40 uppercase font-bold">Téléphone</div>
-                  <a href="tel:80122884" className="text-sm text-white/70 hover:text-white transition-colors">80-12-28-84</a>
-                </div>
+            <h4 className="font-bold text-white text-[11px] mb-4 uppercase tracking-widest opacity-60" style={{ fontFamily: "DM Mono, monospace" }}>Contact</h4>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3">
+                <Phone className="w-3.5 h-3.5 text-primary shrink-0" />
+                <a href="tel:80122884" className="text-xs text-white/60 hover:text-white transition-colors">80-12-28-84</a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle className="w-3.5 h-3.5 text-green-500 shrink-0" />
+                <a href="https://wa.me/22796600817" target="_blank" rel="noreferrer" className="text-xs text-white/60 hover:text-white transition-colors">96-60-08-17</a>
               </li>
               <li className="flex items-start gap-3">
-                <MessageCircle className="w-4 h-4 text-green-500 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-[10px] text-white/40 uppercase font-bold">WhatsApp</div>
-                  <a href="https://wa.me/22796600817" target="_blank" rel="noreferrer" className="text-sm text-white/70 hover:text-white transition-colors">96-60-08-17</a>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
-                <div>
-                  <div className="text-[10px] text-white/40 uppercase font-bold">Adresse</div>
-                  <p className="text-sm text-white/70 leading-snug">Francophonie à côté la FENIFOOT,<br/>Niamey, Niger</p>
-                </div>
+                <MapPin className="w-3.5 h-3.5 text-red-500 shrink-0 mt-0.5" />
+                <p className="text-xs text-white/60 leading-snug">Francophonie, FENIFOOT,<br/>Niamey, Niger</p>
               </li>
             </ul>
           </motion.div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[10px] text-white/30 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>
-            © 2026 Centre de Beauté Zara · Mme Fatouma Zara Madjiri
+        <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
+          <p className="text-[9px] text-white/20 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>
+            © 2026 Centre de Beauté Zara
           </p>
-          <p className="text-[10px] text-white/30 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>
+          <p className="text-[9px] text-white/20 uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>
             Tous droits réservés
           </p>
         </div>
@@ -100,3 +90,4 @@ export function Footer() {
     </footer>
   );
 }
+

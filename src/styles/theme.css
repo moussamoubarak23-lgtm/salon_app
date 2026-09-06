@@ -122,12 +122,20 @@
 }
 
 @layer base {
+  html {
+    background-color: #ffffff;
+  }
+
+  .dark html {
+    background-color: #04080f;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-transparent text-foreground;
   }
 
   /* Méthode robuste pour l'arrière-plan fixe sur Mobile et PC */
@@ -154,6 +162,12 @@
   .bg-card {
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    background-color: var(--card);
+  }
+
+  /* Suppression de la couleur de fond par défaut qui peut créer des bordures */
+  main {
+    background: transparent !important;
   }
 
   /**

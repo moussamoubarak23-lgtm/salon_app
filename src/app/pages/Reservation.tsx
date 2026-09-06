@@ -474,7 +474,7 @@ export function Reservation() {
         <div className="w-full px-4 sm:px-6">
           <motion.div initial="hidden" animate="visible" variants={fadeUp}>
             <span className="text-xs font-bold text-primary uppercase tracking-widest" style={{ fontFamily: "DM Mono, monospace" }}>Réservation en ligne</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Fraunces, serif" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Poppins, sans-serif" }}>
               Choisissez votre<br /><span className="text-primary italic">créneau idéal</span>
             </h1>
           </motion.div>
@@ -549,12 +549,12 @@ export function Reservation() {
                   >
                     <Check className="w-8 h-8 text-green-600" />
                   </motion.div>
-                  <h3 className="text-2xl font-black text-foreground mb-2" style={{ fontFamily: "Fraunces, serif" }}>Réservation confirmée !</h3>
+                  <h3 className="text-2xl font-black text-foreground mb-2" style={{ fontFamily: "Poppins, sans-serif" }}>Réservation confirmée !</h3>
 
                   <motion.div
                     initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}
                     className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-400 text-xs font-semibold px-3 py-1.5 rounded-full mb-4"
-                    style={{ fontFamily: "Outfit, sans-serif" }}
+                    style={{ fontFamily: "Poppins, sans-serif" }}
                   >
                     <MessageCircle className="w-3.5 h-3.5" />
                     Notification envoyée à Mme Fatouma
@@ -584,9 +584,9 @@ export function Reservation() {
                   >
                     <div className="flex items-center justify-center gap-2 mb-2">
                       <Bell className="w-4 h-4 text-primary animate-bounce" />
-                      <span className="text-sm font-black text-primary" style={{ fontFamily: "Fraunces, serif" }}>Rappel Malin</span>
+                      <span className="text-sm font-black text-primary" style={{ fontFamily: "Poppins, sans-serif" }}>Rappel Malin</span>
                     </div>
-                    <p className="text-[11px] text-muted-foreground mb-4 px-2" style={{ fontFamily: "Outfit, sans-serif" }}>
+                    <p className="text-[11px] text-muted-foreground mb-4 px-2" style={{ fontFamily: "Poppins, sans-serif" }}>
                       Ne manquez pas votre séance ! Ajoutez-la à votre agenda pour être prévenue <strong>1h avant</strong>.
                     </p>
 
@@ -596,7 +596,7 @@ export function Reservation() {
                         href={generateGoogleCalendarLink(selectedService, selectedDate, selectedSlot)}
                         target="_blank" rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 bg-white border border-border text-foreground font-bold py-2.5 rounded-xl text-xs shadow-sm"
-                        style={{ fontFamily: "Outfit, sans-serif" }}
+                        style={{ fontFamily: "Poppins, sans-serif" }}
                       >
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg" className="w-3.5 h-3.5" alt="" />
                         Google Calendar
@@ -605,7 +605,7 @@ export function Reservation() {
                         whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                         onClick={() => downloadICSFile(selectedService, selectedDate, selectedSlot)}
                         className="flex items-center justify-center gap-2 bg-white border border-border text-foreground font-bold py-2.5 rounded-xl text-xs shadow-sm"
-                        style={{ fontFamily: "Outfit, sans-serif" }}
+                        style={{ fontFamily: "Poppins, sans-serif" }}
                       >
                         <Calendar className="w-3.5 h-3.5 text-blue-500" />
                         Apple / Autres Calendriers
@@ -616,7 +616,7 @@ export function Reservation() {
                           whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                           onClick={requestNotificationPermission}
                           className="flex items-center justify-center gap-2 bg-primary/10 text-primary font-bold py-2.5 rounded-xl text-xs mt-2 border border-primary/20"
-                          style={{ fontFamily: "Outfit, sans-serif" }}
+                          style={{ fontFamily: "Poppins, sans-serif" }}
                         >
                           <Bell className="w-3.5 h-3.5" />
                           M'alerter par notification
@@ -665,14 +665,14 @@ export function Reservation() {
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                       <Calendar className="w-4 h-4 text-primary" />
                     </div>
-                    <h3 className="font-black text-xl text-foreground" style={{ fontFamily: "Fraunces, serif" }}>Ma Réservation</h3>
+                    <h3 className="font-black text-xl text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>Ma Réservation</h3>
                   </div>
 
                   <div className="bg-card rounded-2xl p-5 border border-border shadow-sm mb-6 space-y-4">
                     <div className="flex items-start justify-between">
                       <div>
                         <div className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1" style={{ fontFamily: "DM Mono, monospace" }}>Service</div>
-                        <div className="text-lg font-black text-foreground" style={{ fontFamily: "Fraunces, serif" }}>{existingBooking.service}</div>
+                        <div className="text-lg font-black text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{existingBooking.service}</div>
                       </div>
                       <div className="bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 text-[10px] font-bold px-2 py-1 rounded-full border border-green-200 dark:border-green-800">
                         Confirmé
@@ -682,17 +682,17 @@ export function Reservation() {
                     <div className="grid grid-cols-2 gap-4 pt-4 border-t border-border">
                       <div>
                         <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-0.5" style={{ fontFamily: "DM Mono, monospace" }}>Date</div>
-                        <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>{formatDateLabel(new Date(existingBooking.date))}</div>
+                        <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{formatDateLabel(new Date(existingBooking.date))}</div>
                       </div>
                       <div>
                         <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-0.5" style={{ fontFamily: "DM Mono, monospace" }}>Heure</div>
-                        <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>{existingBooking.slot}</div>
+                        <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{existingBooking.slot}</div>
                       </div>
                     </div>
 
                     <div className="pt-4 border-t border-border">
                       <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-0.5" style={{ fontFamily: "DM Mono, monospace" }}>Cliente</div>
-                      <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>{existingBooking.name}</div>
+                      <div className="text-sm font-bold text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>{existingBooking.name}</div>
                     </div>
                   </div>
 
@@ -701,7 +701,7 @@ export function Reservation() {
                       whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
                       onClick={handleModify}
                       className="w-full flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold py-3.5 rounded-xl text-sm"
-                      style={{ fontFamily: "Outfit, sans-serif" }}
+                      style={{ fontFamily: "Poppins, sans-serif" }}
                     >
                       <Pencil className="w-4 h-4" /> Modifier mon créneau
                     </motion.button>
@@ -710,7 +710,7 @@ export function Reservation() {
                       <button
                         onClick={handleCancel}
                         className="w-full flex items-center justify-center gap-2 text-red-500 font-bold py-3 text-sm hover:bg-red-50 dark:hover:bg-red-900/10 rounded-xl transition-colors"
-                        style={{ fontFamily: "Outfit, sans-serif" }}
+                        style={{ fontFamily: "Poppins, sans-serif" }}
                       >
                         <X className="w-4 h-4" /> Annuler la réservation
                       </button>
@@ -718,9 +718,9 @@ export function Reservation() {
                       <div className="p-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-xl">
                         <div className="flex items-center gap-2 text-amber-700 dark:text-amber-400 mb-1.5">
                           <AlertCircle className="w-4 h-4" />
-                          <span className="text-xs font-bold" style={{ fontFamily: "Outfit, sans-serif" }}>Annulations limitées</span>
+                          <span className="text-xs font-bold" style={{ fontFamily: "Poppins, sans-serif" }}>Annulations limitées</span>
                         </div>
-                        <p className="text-[11px] text-amber-600 dark:text-amber-500 leading-relaxed" style={{ fontFamily: "Outfit, sans-serif" }}>
+                        <p className="text-[11px] text-amber-600 dark:text-amber-500 leading-relaxed" style={{ fontFamily: "Poppins, sans-serif" }}>
                           Vous avez atteint la limite de 2 annulations autonomes. Pour toute nouvelle modification, veuillez nous contacter sur WhatsApp.
                         </p>
                         <a
@@ -763,13 +763,13 @@ export function Reservation() {
                         {s < 3 && <div className={`h-0.5 w-10 transition-colors duration-500 ${step > s ? "bg-primary" : "bg-border"}`} />}
                       </div>
                     ))}
-                    <span className="ml-2 text-xs text-muted-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>Étape {step}/3</span>
+                    <span className="ml-2 text-xs text-muted-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>Étape {step}/3</span>
                   </div>
 
                   {/* ── Étape 1 : Service ── */}
                   {step === 1 && (
                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
-                      <h3 className="font-black text-xl text-foreground mb-4" style={{ fontFamily: "Fraunces, serif" }}>Quel service ?</h3>
+                      <h3 className="font-black text-xl text-foreground mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Quel service ?</h3>
                       <div className="space-y-2">
                         {SERVICES.map((s) => (
                           <motion.button key={s.id} whileHover={{ x: 3 }} onClick={() => setSelectedService(s.name)}
@@ -784,7 +784,7 @@ export function Reservation() {
                       </div>
                       <motion.button whileTap={{ scale: 0.97 }} onClick={() => selectedService && setStep(2)} disabled={!selectedService}
                         className="mt-4 w-full bg-primary text-primary-foreground font-bold py-3 rounded-xl hover:opacity-90 transition-opacity disabled:opacity-40"
-                        style={{ fontFamily: "Outfit, sans-serif" }}
+                        style={{ fontFamily: "Poppins, sans-serif" }}
                       >Continuer <ChevronRight className="inline w-4 h-4" /></motion.button>
                     </motion.div>
                   )}
@@ -792,14 +792,14 @@ export function Reservation() {
                   {/* ── Étape 2 : Date + Créneau ── */}
                   {step === 2 && (
                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
-                      <h3 className="font-black text-xl text-foreground mb-1" style={{ fontFamily: "Fraunces, serif" }}>Date & créneau</h3>
-                      <p className="text-xs text-muted-foreground mb-4 flex items-center gap-1.5" style={{ fontFamily: "Outfit, sans-serif" }}>
+                      <h3 className="font-black text-xl text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>Date & créneau</h3>
+                      <p className="text-xs text-muted-foreground mb-4 flex items-center gap-1.5" style={{ fontFamily: "Poppins, sans-serif" }}>
                         <Clock className="w-3.5 h-3.5" /> Salon ouvert de 10h30 à 20h00
                       </p>
 
                       {/* ── Sélecteur de date ── */}
                       <div className="mb-4">
-                        <div className="text-xs font-bold text-foreground mb-2 flex items-center gap-1.5" style={{ fontFamily: "Outfit, sans-serif" }}>
+                        <div className="text-xs font-bold text-foreground mb-2 flex items-center gap-1.5" style={{ fontFamily: "Poppins, sans-serif" }}>
                           <Calendar className="w-3.5 h-3.5 text-primary" /> Choisissez une date
                         </div>
                         <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
@@ -820,10 +820,10 @@ export function Reservation() {
                                 <span className={`text-[10px] font-bold uppercase tracking-wide ${isSelected ? "text-blue-200" : "text-muted-foreground"}`} style={{ fontFamily: "DM Mono, monospace" }}>
                                   {isToday ? "auj." : d.toLocaleDateString("fr-FR", { weekday: "short" })}
                                 </span>
-                                <span className={`font-black text-base leading-tight ${isSelected ? "text-white" : "text-foreground"}`} style={{ fontFamily: "Fraunces, serif" }}>
+                                <span className={`font-black text-base leading-tight ${isSelected ? "text-white" : "text-foreground"}`} style={{ fontFamily: "Poppins, sans-serif" }}>
                                   {d.getDate()}
                                 </span>
-                                <span className={`text-[9px] ${isSelected ? "text-blue-200" : "text-muted-foreground"}`} style={{ fontFamily: "Outfit, sans-serif" }}>
+                                <span className={`text-[9px] ${isSelected ? "text-blue-200" : "text-muted-foreground"}`} style={{ fontFamily: "Poppins, sans-serif" }}>
                                   {d.toLocaleDateString("fr-FR", { month: "short" })}
                                 </span>
                               </motion.button>
@@ -839,7 +839,7 @@ export function Reservation() {
                           className={`flex-1 flex items-center justify-center gap-1.5 text-xs font-bold py-2 rounded-full transition-all ${
                             !customMode ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
                           }`}
-                          style={{ fontFamily: "Outfit, sans-serif" }}
+                          style={{ fontFamily: "Poppins, sans-serif" }}
                         >
                           <Clock className="w-3.5 h-3.5" /> Créneaux disponibles
                         </button>
@@ -848,7 +848,7 @@ export function Reservation() {
                           className={`flex-1 flex items-center justify-center gap-1.5 text-xs font-bold py-2 rounded-full transition-all ${
                             customMode ? "bg-primary text-primary-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
                           }`}
-                          style={{ fontFamily: "Outfit, sans-serif" }}
+                          style={{ fontFamily: "Poppins, sans-serif" }}
                         >
                           <Pencil className="w-3.5 h-3.5" /> Mon horaire
                         </button>
@@ -893,7 +893,7 @@ export function Reservation() {
                                 );
                               })}
                             </div>
-                            <div className="flex items-center gap-3 flex-wrap mt-3 text-[10px] text-muted-foreground" style={{ fontFamily: "Outfit, sans-serif" }}>
+                            <div className="flex items-center gap-3 flex-wrap mt-3 text-[10px] text-muted-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>
                               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-primary inline-block" />Sélectionné</span>
                               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-red-100 dark:bg-red-900/40 inline-block border border-red-200 dark:border-red-800" />Pris</span>
                               <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-sm bg-muted inline-block border border-border" />Passé</span>
@@ -922,7 +922,7 @@ export function Reservation() {
                                   }`} />
                                 </div>
                                 <div className="flex-1">
-                                  <div className="text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>
+                                  <div className="text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>
                                     Saisissez votre horaire souhaité
                                   </div>
                                   <input
@@ -932,7 +932,7 @@ export function Reservation() {
                                     max="20:00"
                                     onChange={(e) => setCustomTime(e.target.value)}
                                     className="w-full bg-card border border-border rounded-xl px-3 py-2 text-base font-black text-foreground outline-none focus:border-primary transition-colors"
-                                    style={{ fontFamily: "Fraunces, serif" }}
+                                    style={{ fontFamily: "Poppins, sans-serif" }}
                                   />
                                 </div>
                                 {customTime && (
@@ -951,7 +951,7 @@ export function Reservation() {
                                       customStatus === "taken" || customStatus === "past" ? "bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400" :
                                       "bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-400"
                                     }`}
-                                    style={{ fontFamily: "Outfit, sans-serif" }}
+                                    style={{ fontFamily: "Poppins, sans-serif" }}
                                   >
                                     {customStatus === "valid" && <span className="flex items-center gap-2"><Check className="w-4 h-4 flex-shrink-0" /> Ce créneau est disponible — parfait !</span>}
                                     {customStatus === "taken" && <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4 flex-shrink-0" /> Ce créneau est déjà pris. Choisissez un autre horaire.</span>}
@@ -995,16 +995,16 @@ export function Reservation() {
                   {/* ── Étape 3 : Coordonnées ── */}
                   {step === 3 && (
                     <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
-                      <h3 className="font-black text-xl text-foreground mb-4" style={{ fontFamily: "Fraunces, serif" }}>Vos coordonnées</h3>
+                      <h3 className="font-black text-xl text-foreground mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Vos coordonnées</h3>
                       <div className="space-y-3">
                         <div>
-                          <label className="block text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>Prénom & Nom</label>
+                          <label className="block text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>Prénom & Nom</label>
                           <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="ex. Aïssatou Diallo"
                             className="w-full bg-card border border-border rounded-xl px-4 py-3 text-sm outline-none focus:border-primary transition-colors text-foreground"
                           />
                         </div>
                         <div>
-                          <label className="block text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Outfit, sans-serif" }}>Numéro de téléphone</label>
+                          <label className="block text-xs font-bold text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>Numéro de téléphone</label>
                           <input type="tel" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="ex. +227 90 00 00 00"
                             className={`w-full bg-card border rounded-xl px-4 py-3 text-sm outline-none transition-colors text-foreground ${
                               phoneError ? "border-red-400 focus:border-red-400" : "border-border focus:border-primary"
@@ -1015,7 +1015,7 @@ export function Reservation() {
                               <motion.p
                                 initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -4 }}
                                 className="flex items-center gap-1.5 mt-1.5 text-xs text-red-500 font-semibold"
-                                style={{ fontFamily: "Outfit, sans-serif" }}
+                                style={{ fontFamily: "Poppins, sans-serif" }}
                               >
                                 <AlertCircle className="w-3.5 h-3.5 flex-shrink-0" />{phoneError}
                               </motion.p>
@@ -1058,3 +1058,4 @@ export function Reservation() {
     </div>
   );
 }
+

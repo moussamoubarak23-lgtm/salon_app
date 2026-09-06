@@ -49,10 +49,10 @@ function PrototypeNav() {
               )}
 
               <div className="flex-1 flex flex-col relative z-10">
-                <span className={`text-sm font-black tracking-tight ${isActive ? "text-white" : "text-white/90"}`} style={{ fontFamily: "Fraunces, serif" }}>
+                <span className={`text-sm font-black tracking-tight ${isActive ? "text-white" : "text-white/90"}`} style={{ fontFamily: "Poppins, sans-serif" }}>
                   {link.label}
                 </span>
-                <span className={`text-[10px] mt-1 font-medium leading-relaxed ${isActive ? "text-white/70" : "text-white/40"}`} style={{ fontFamily: "Outfit, sans-serif" }}>
+                <span className={`text-[10px] mt-1 font-medium leading-relaxed ${isActive ? "text-white/70" : "text-white/40"}`} style={{ fontFamily: "Poppins, sans-serif" }}>
                   {link.description}
                 </span>
               </div>
@@ -126,7 +126,7 @@ function ShowcaseLayout() {
         <div className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-black text-xl shadow-2xl shadow-primary/30 rotate-3 transition-transform hover:rotate-0 cursor-default">Z</div>
           <div>
-            <h1 className="text-sm font-black tracking-tight leading-none" style={{ fontFamily: "Fraunces, serif" }}>Centre Zara Beauté</h1>
+            <h1 className="text-sm font-black tracking-tight leading-none" style={{ fontFamily: "Poppins, sans-serif" }}>Centre Zara Beauté</h1>
             <p className="text-[10px] text-white/30 uppercase tracking-[0.3em] font-bold mt-1.5">Interactive Experience v1.0</p>
           </div>
         </div>
@@ -233,3 +233,4 @@ createRoot(document.getElementById("root")!).render(
     <ShowcaseLayout />
   </HashRouter>
 );
+

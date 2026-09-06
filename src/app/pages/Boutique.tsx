@@ -158,10 +158,10 @@ function OrderModal({
             </button>
           )}
           <div className="absolute bottom-2.5 left-4 right-12">
-            <div className="text-white font-black text-base leading-tight" style={{ fontFamily: "Fraunces, serif" }}>
+            <div className="text-white font-black text-base leading-tight" style={{ fontFamily: "Poppins, sans-serif" }}>
               {product.name}
             </div>
-            <div className="text-blue-300 font-bold text-sm" style={{ fontFamily: "Fraunces, serif" }}>
+            <div className="text-blue-300 font-bold text-sm" style={{ fontFamily: "Poppins, sans-serif" }}>
               {product.price}
             </div>
           </div>
@@ -169,12 +169,12 @@ function OrderModal({
             {delivery === "retrait" ? (
               <span className="flex items-center gap-1 bg-black/50 backdrop-blur-sm rounded-full px-2.5 py-1">
                 <Store className="w-3 h-3 text-blue-300" />
-                <span className="text-[10px] font-bold text-blue-200" style={{ fontFamily: "Outfit, sans-serif" }}>Retrait salon</span>
+                <span className="text-[10px] font-bold text-blue-200" style={{ fontFamily: "Poppins, sans-serif" }}>Retrait salon</span>
               </span>
             ) : (
               <span className="flex items-center gap-1 bg-black/50 backdrop-blur-sm rounded-full px-2.5 py-1">
                 <Truck className="w-3 h-3 text-blue-300" />
-                <span className="text-[10px] font-bold text-blue-200" style={{ fontFamily: "Outfit, sans-serif" }}>Livraison</span>
+                <span className="text-[10px] font-bold text-blue-200" style={{ fontFamily: "Poppins, sans-serif" }}>Livraison</span>
               </span>
             )}
           </div>
@@ -186,7 +186,7 @@ function OrderModal({
           <AnimatePresence mode="wait">
             {step === "form" && (
               <motion.div key="form" initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}>
-                <h3 className="font-black text-base text-foreground mb-3" style={{ fontFamily: "Fraunces, serif" }}>Vos coordonnées</h3>
+                <h3 className="font-black text-base text-foreground mb-3" style={{ fontFamily: "Poppins, sans-serif" }}>Vos coordonnées</h3>
                 <div className="space-y-2.5 mb-3">
                   <div className="relative">
                     <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground pointer-events-none" />
@@ -213,7 +213,7 @@ function OrderModal({
               <motion.div key="confirm" initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -30 }}>
                 <div className="flex items-center gap-2 mb-3">
                   <button onClick={() => setStep("form")} className="w-7 h-7 rounded-full hover:bg-muted flex items-center justify-center"><ChevronLeft className="w-3.5 h-3.5 text-muted-foreground" /></button>
-                  <h3 className="font-black text-base text-foreground" style={{ fontFamily: "Fraunces, serif" }}>Récapitulatif</h3>
+                  <h3 className="font-black text-base text-foreground" style={{ fontFamily: "Poppins, sans-serif" }}>Récapitulatif</h3>
                 </div>
                 <div className="bg-muted rounded-xl overflow-hidden mb-3 border border-border divide-y divide-border">
                   {[
@@ -250,7 +250,7 @@ function OrderModal({
             {step === "sent" && (
               <motion.div key="sent" initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="py-4 flex flex-col items-center text-center">
                 <div className="w-14 h-14 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-3"><Check className="w-7 h-7 text-green-500" /></div>
-                <h3 className="font-black text-xl text-foreground mb-1" style={{ fontFamily: "Fraunces, serif" }}>Commande envoyée !</h3>
+                <h3 className="font-black text-xl text-foreground mb-1" style={{ fontFamily: "Poppins, sans-serif" }}>Commande envoyée !</h3>
                 <p className="text-xs text-muted-foreground mb-4">Commande transmise à Mme Fatouma. Elle vous contactera prochainement.</p>
                 <motion.button whileTap={{ scale: 0.97 }} onClick={onClose} className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-xl text-sm">Retour à la boutique</motion.button>
               </motion.div>
@@ -286,7 +286,7 @@ export function Boutique() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <motion.div initial="hidden" animate="visible" variants={fadeUp}>
               <span className="text-xs font-bold text-primary uppercase tracking-widest">Boutique en ligne</span>
-              <h1 className="text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Fraunces, serif" }}>Nos produits,<br /><span className="text-primary italic">disponibles au salon.</span></h1>
+              <h1 className="text-4xl md:text-5xl font-black text-foreground mt-2" style={{ fontFamily: "Poppins, sans-serif" }}>Nos produits,<br /><span className="text-primary italic">disponibles au salon.</span></h1>
             </motion.div>
             <motion.div initial="hidden" animate="visible" variants={fadeUp} className="flex items-center gap-2 bg-card rounded-2xl p-1.5 border border-border self-start">
               {(["retrait", "livraison"] as const).map((mode) => (
@@ -344,3 +344,4 @@ export function Boutique() {
     </div>
   );
 }
+
